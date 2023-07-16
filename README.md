@@ -3,7 +3,7 @@
 Reproduire la fonction get_next_line en moins de trois heures.
 Pour pouvoir tester la fonction avant de grademe, il faut préalablement créer 4 fichiers de test.
 - 1 contenant plusieurs lignes, ainsi que plusieurs sauts à la ligne.
-- 1 contenant rien.
+- 1 ne contenant rien.
 - 1 avec seulement un retour à la ligne.
 - 1 avec seulement 42 sans retour à la ligne (vérifier avec la commande ls -l).
 
