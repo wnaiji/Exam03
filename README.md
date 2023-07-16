@@ -6,6 +6,7 @@ Pour pouvoir tester la fonction avant de grademe, il faut préalablement créer 
 - 1 contenant rien.
 - 1 avec seulement un retour à la ligne.
 - 1 avec seulement 42 sans retour à la ligne (vérifier avec la commande ls -l).
+
 Sur chaque test bien vérifier le nombre de retours (null),
 Si par exemple vous utilisez 10 fois la fonction get_next_line avec le fichier contenant seulement un seul retour à la ligne,
 Vous devez avoir comme résultat.
