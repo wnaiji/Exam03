@@ -1,13 +1,19 @@
 # Exam03
 
-Reproduire la fonction get_next_line en moins de trois heures.
-Pour pouvoir tester la fonction avant de grademe, il faut préalablement créer 4 fichiers de test.
-- 1 contenant plusieurs lignes, ainsi que plusieurs sauts à la ligne.
-- 1 ne contenant rien.
-- 1 avec seulement un retour à la ligne.
-- 1 avec seulement 42 sans retour à la ligne (vérifier avec la commande ls -l).
+## Objectif
+Reproduire la fonction `get_next_line` en moins de trois heures.
 
-Sur chaque test bien vérifier le nombre de retours (null),
-Si par exemple vous utilisez 10 fois la fonction get_next_line avec le fichier contenant seulement un seul retour à la ligne,
-Vous devez avoir comme résultat.
-\n puis 9 (null) si un seul manque à l'appel cela signifie que get_next_line retourn un \0 qui n'est pas un (null).
+## Préparation des tests
+Pour évaluer correctement la fonction avant de la faire corriger, créez quatre fichiers distincts :
+1. **Fichier A** : Contient plusieurs lignes, avec plusieurs sauts de ligne.
+2. **Fichier B** : Est complètement vide.
+3. **Fichier C** : Ne contient qu’un seul retour à la ligne.
+4. **Fichier D** : Contient uniquement la chaîne "42" sans retour à la ligne (vérifiez avec `ls -l`).
+
+## Vérification du comportement
+Sur chacun de ces fichiers, assurez-vous de compter correctement les retours `NULL` renvoyés par `get_next_line`.  
+- **Exemple** : Si vous appelez 10 fois `get_next_line` sur le fichier qui ne contient qu’un seul retour à la ligne, vous devez obtenir :
+  - `"\n"` lors du premier appel,
+  - puis `NULL` pour les 9 appels suivants.
+  
+Si une seule occurrence de `NULL` manque, c’est que `get_next_line` renvoie `"\0"` au lieu de `NULL`. Assurez-vous alors de corriger ce comportement.
